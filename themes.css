@@ -1,0 +1,294 @@
+/* TDV Tema Seçici Stilleri */
+
+/* Tema Seçici Container */
+.theme-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.theme-btn {
+    width: 35px;
+    height: 35px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    background: transparent;
+    padding: 3px;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
+
+.theme-btn.active {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.theme-color {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Varsayılan Tema */
+.theme-default {
+    background-color: inherit;
+    color: inherit;
+}
+
+/* Sepya Tema */
+.theme-sepia {
+    background-color: #f4f1e8 !important;
+    color: #5d4e37 !important;
+}
+
+.theme-sepia .body_container,
+.theme-sepia #header_container,
+.theme-sepia .search_container {
+    background-color: #f4f1e8 !important;
+    color: #5d4e37 !important;
+}
+
+.theme-sepia a {
+    color: #8b4513 !important;
+}
+
+.theme-sepia a:hover {
+    color: #a0522d !important;
+}
+
+/* Koyu Tema */
+.theme-dark {
+    background-color: #2d3748 !important;
+    color: #e2e8f0 !important;
+}
+
+.theme-dark .body_container,
+.theme-dark #header_container,
+.theme-dark .search_container,
+.theme-dark .pure-form input,
+.theme-dark .pure-form textarea,
+.theme-dark .pure-form select {
+    background-color: #2d3748 !important;
+    color: #e2e8f0 !important;
+    border-color: #4a5568 !important;
+}
+
+.theme-dark a {
+    color: #63b3ed !important;
+}
+
+.theme-dark a:hover {
+    color: #90cdf4 !important;
+}
+
+.theme-dark .header_logo,
+.theme-dark .header_search,
+.theme-dark .header_right {
+    background-color: #1a202c !important;
+}
+
+.theme-dark #searchBox,
+.theme-dark #searchBox1 {
+    background-color: #4a5568 !important;
+    color: #e2e8f0 !important;
+    border-color: #718096 !important;
+}
+
+.theme-dark .hover-menu {
+    background-color: #1a202c !important;
+    border-color: #4a5568 !important;
+}
+
+.theme-dark .hover-menu ul li a {
+    color: #e2e8f0 !important;
+}
+
+.theme-dark .hover-menu ul li a:hover {
+    background-color: #2d3748 !important;
+}
+
+/* Siyah Tema */
+.theme-black {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.theme-black .body_container,
+.theme-black #header_container,
+.theme-black .search_container,
+.theme-black .pure-form input,
+.theme-black .pure-form textarea,
+.theme-black .pure-form select {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #333333 !important;
+}
+
+.theme-black a {
+    color: #66b3ff !important;
+}
+
+.theme-black a:hover {
+    color: #99ccff !important;
+}
+
+.theme-black .header_logo,
+.theme-black .header_search,
+.theme-black .header_right {
+    background-color: #111111 !important;
+}
+
+.theme-black #searchBox,
+.theme-black #searchBox1 {
+    background-color: #222222 !important;
+    color: #ffffff !important;
+    border-color: #444444 !important;
+}
+
+.theme-black .hover-menu {
+    background-color: #111111 !important;
+    border-color: #333333 !important;
+}
+
+.theme-black .hover-menu ul li a {
+    color: #ffffff !important;
+}
+
+.theme-black .hover-menu ul li a:hover {
+    background-color: #222222 !important;
+}
+
+/* Gruvbox Koyu Tema */
+.theme-gruvbox {
+    background-color: #282828 !important;
+    color: #ebdbb2 !important;
+}
+
+.theme-gruvbox .body_container,
+.theme-gruvbox #header_container,
+.theme-gruvbox .search_container,
+.theme-gruvbox .pure-form input,
+.theme-gruvbox .pure-form textarea,
+.theme-gruvbox .pure-form select {
+    background-color: #282828 !important;
+    color: #ebdbb2 !important;
+    border-color: #504945 !important;
+}
+
+.theme-gruvbox a {
+    color: #83a598 !important;
+}
+
+.theme-gruvbox a:hover {
+    color: #b8bb26 !important;
+}
+
+.theme-gruvbox .header_logo,
+.theme-gruvbox .header_search,
+.theme-gruvbox .header_right {
+    background-color: #1d2021 !important;
+}
+
+.theme-gruvbox #searchBox,
+.theme-gruvbox #searchBox1 {
+    background-color: #3c3836 !important;
+    color: #ebdbb2 !important;
+    border-color: #665c54 !important;
+}
+
+.theme-gruvbox .hover-menu {
+    background-color: #1d2021 !important;
+    border-color: #504945 !important;
+}
+
+.theme-gruvbox .hover-menu ul li a {
+    color: #ebdbb2 !important;
+}
+
+.theme-gruvbox .hover-menu ul li a:hover {
+    background-color: #3c3836 !important;
+}
+
+/* Gruvbox Renk Paleti */
+.theme-gruvbox h1, .theme-gruvbox h2, .theme-gruvbox h3,
+.theme-gruvbox h4, .theme-gruvbox h5, .theme-gruvbox h6 {
+    color: #fabd2f !important;
+}
+
+.theme-gruvbox .button-success {
+    background-color: #b8bb26 !important;
+    color: #1d2021 !important;
+}
+
+.theme-gruvbox .button-error {
+    background-color: #fb4934 !important;
+    color: #1d2021 !important;
+}
+
+.theme-gruvbox .button-warning {
+    background-color: #fe8019 !important;
+    color: #1d2021 !important;
+}
+
+/* Responsive Düzenlemeler */
+@media screen and (max-width: 48em) {
+    .theme-selector {
+        top: 10px;
+        right: 10px;
+        padding: 6px;
+    }
+    
+    .theme-btn {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .theme-color {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Tema seçicinin dark temalarda görünürlüğü */
+[data-theme="dark"] .theme-selector,
+[data-theme="black"] .theme-selector,
+[data-theme="gruvbox"] .theme-selector {
+    background: rgba(45, 55, 72, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="black"] .theme-selector {
+    background: rgba(34, 34, 34, 0.95);
+}
+
+[data-theme="gruvbox"] .theme-selector {
+    background: rgba(40, 40, 40, 0.95);
+}

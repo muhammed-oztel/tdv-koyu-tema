@@ -1,0 +1,32 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <!-- Tema seçici ikonu - 128x128 -->
+    <rect width="128" height="128" rx="16" fill="url(#gradient)" />
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea" />
+            <stop offset="100%" style="stop-color:#764ba2" />
+        </linearGradient>
+    </defs>
+
+    <!-- Ana tema kutuları -->
+    <rect x="16" y="16" width="40" height="40" rx="6" fill="#ffffff" stroke="#e2e8f0"
+        stroke-width="2" />
+    <rect x="72" y="16" width="40" height="40" rx="6" fill="#2d3748" />
+    <rect x="16" y="72" width="40" height="40" rx="6" fill="#f4f1e8" />
+    <rect x="72" y="72" width="40" height="40" rx="6" fill="#000000" />
+
+    <!-- Orta tema kutusu (Gruvbox) -->
+    <rect x="44" y="44" width="40" height="40" rx="6" fill="#282828" />
+
+    <!-- Tema etiketi simgeleri -->
+    <text x="36" y="45" font-family="Arial, sans-serif" font-size="8" fill="#333"
+        text-anchor="middle">Aa</text>
+    <text x="92" y="45" font-family="Arial, sans-serif" font-size="8" fill="#e2e8f0"
+        text-anchor="middle">Aa</text>
+    <text x="36" y="101" font-family="Arial, sans-serif" font-size="8" fill="#5d4e37"
+        text-anchor="middle">Aa</text>
+    <text x="92" y="101" font-family="Arial, sans-serif" font-size="8" fill="#ffffff"
+        text-anchor="middle">Aa</text>
+    <text x="64" y="73" font-family="Arial, sans-serif" font-size="8" fill="#ebdbb2"
+        text-anchor="middle">Aa</text>
+</svg>

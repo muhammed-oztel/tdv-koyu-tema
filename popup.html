@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDV Tema Seçici</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header class="popup-header">
+            <h1>Tema Seçici</h1>
+            <p>TDV İslam Ansiklopedisi için tema seçin</p>
+        </header>
+        
+        <main class="themes-grid">
+            <div class="theme-option" data-theme="default">
+                <div class="theme-preview default-preview"></div>
+                <h3>Varsayılan</h3>
+                <p>Orijinal beyaz tema</p>
+            </div>
+            
+            <div class="theme-option" data-theme="sepia">
+                <div class="theme-preview sepia-preview"></div>
+                <h3>Sepya</h3>
+                <p>Göz dostu kahverengi ton</p>
+            </div>
+            
+            <div class="theme-option" data-theme="dark">
+                <div class="theme-preview dark-preview"></div>
+                <h3>Koyu</h3>
+                <p>Standart koyu tema</p>
+            </div>
+            
+            <div class="theme-option" data-theme="black">
+                <div class="theme-preview black-preview"></div>
+                <h3>Siyah</h3>
+                <p>Tam siyah OLED tema</p>
+            </div>
+            
+            <div class="theme-option" data-theme="gruvbox">
+                <div class="theme-preview gruvbox-preview"></div>
+                <h3>Gruvbox Koyu</h3>
+                <p>Programcı dostu koyu tema</p>
+            </div>
+        </main>
+        
+        <footer class="popup-footer">
+            <div class="current-theme">
+                <span>Aktif tema: <strong id="current-theme-name">Varsayılan</strong></span>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <!-- Tema seçici ikonu - 16x16 -->
+    <rect width="16" height="16" rx="2" fill="#667eea" />
+    <rect x="2" y="2" width="5" height="5" rx="1" fill="#ffffff" />
+    <rect x="9" y="2" width="5" height="5" rx="1" fill="#2d3748" />
+    <rect x="2" y="9" width="5" height="5" rx="1" fill="#f4f1e8" />
+    <rect x="9" y="9" width="5" height="5" rx="1" fill="#000000" />
+</svg>
