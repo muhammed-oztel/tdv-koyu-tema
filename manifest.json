@@ -12,10 +12,9 @@
         {
             "matches": ["https://islamansiklopedisi.org.tr/*"],
             "js": ["content.js"],
-            "css": ["content.css"],
             "run_at": "document_idle"
         }
     ],
-    "author": "Sen",
+    "author": "Muhammed Fatih ÖZTEL",
     "permissions": []
 }
