@@ -13,7 +13,6 @@
     }
   ],
   "action": {
-    "default_popup": "popup.html",
     "default_title": "Tema Seçici",
     "default_icon": {
       "16": "icons/icon16.svg",
