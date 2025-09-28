@@ -1,4 +1,7 @@
 {
-  "tabWidth": 4,
-  "useTabs": false
+    "tabWidth": 4,
+    "useTabs": false,
+    "checkIgnorePragma": false,
+    "semi": true,
+    "endOfLine": "crlf"
 }

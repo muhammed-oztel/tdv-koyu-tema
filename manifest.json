@@ -1,28 +1,21 @@
 {
-  "manifest_version": 3,
-  "name": "TDV İslam Ansiklopedisi - Tema Seçici",
-  "version": "2.0.0",
-  "description": "TDV İslam Ansiklopedisi için gelişmiş tema seçici - Varsayılan, Sepya, Koyu, Siyah ve Gruvbox temaları",
-  "permissions": ["storage"],
-  "content_scripts": [
-    {
-      "matches": ["https://islamansiklopedisi.org.tr/*"],
-      "js": ["content.js"],
-      "css": ["themes.css"],
-      "run_at": "document_end"
-    }
-  ],
-  "action": {
-    "default_title": "Tema Seçici",
-    "default_icon": {
-      "16": "icons/icon16.svg",
-      "48": "icons/icon48.svg",
-      "128": "icons/icon128.svg"
-    }
-  },
-  "icons": {
-    "16": "icons/icon16.svg",
-    "48": "icons/icon48.svg", 
-    "128": "icons/icon128.svg"
-  }
+    "manifest_version": 3,
+    "name": "TDV İslam Ansiklopedisi Koyu Tema",
+    "version": "1.0",
+    "description": "Mevcut sepya / beyaz tema seçeneklerine Koyu ve Gruvbox temalarını ekler.",
+    "icons": {
+        "16": "icons/icon16.svg",
+        "48": "icons/icon48.svg",
+        "128": "icons/icon128.svg"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://islamansiklopedisi.org.tr/*"],
+            "js": ["content.js"],
+            "css": ["content.css"],
+            "run_at": "document_idle"
+        }
+    ],
+    "author": "Sen",
+    "permissions": []
 }
